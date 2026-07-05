@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-name="Tvone" tvg-id="tvone",Tvone
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/tvone/master.m3u8
 #EXTINF:-1 tvg-name="Cnn Indonesia" tvg-id="cnn-indonesia",Cnn Indonesia
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cnn-indonesia/master.m3u8
 #EXTINF:-1 tvg-name="Idx" tvg-id="idx",Idx
