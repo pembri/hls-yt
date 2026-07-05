@@ -4,21 +4,21 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '*/30 * * * *'
-
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '22'
-      - run: npm install youtubei.js
-      - run: node tarik.js
+      - run: |
+          sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+          sudo chmod a+rx /usr/local/bin/yt-dlp
+      - run: |
+          # Perintah ini akan langsung menarik URL m3u8 yang valid
+          yt-dlp -g "https://www.youtube.com/watch?v=8dNAAe5dcqQ" > stream.txt
       - name: Commit & Push
         run: |
           git config user.name "Bot"
           git config user.email "bot@github.com"
-          git add stream_links.json
-          git commit -m "Update stream links" || exit 0
+          git add stream.txt
+          git commit -m "Update stream" || exit 0
           git push
