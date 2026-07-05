@@ -9,14 +9,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Tarik Link API
+      - name: Tarik Data
         run: |
-          # API ini lebih stabil daripada kavin.rocks
-          curl -s "https://api.piped.projectsegfau.lt/streams/8dNAAe5dcqQ" | jq -r '.hls' > stream.txt
+          # Kita ambil stream url langsung dari Piped
+          # Kalau gagal, kita tulis "OFFLINE"
+          curl -s "https://api.piped.projectsegfau.lt/streams/8dNAAe5dcqQ" > data.json
+          # Ambil link hls secara manual tanpa jq yang rewel
+          grep -o 'https://[^"]*m3u8[^"]*' data.json | head -n 1 > link1.txt
+          
+          curl -s "https://api.piped.projectsegfau.lt/streams/rQJoEpzKkNk" > data2.json
+          grep -o 'https://[^"]*m3u8[^"]*' data2.json | head -n 1 > link2.txt
+          
+          # Gabungin jadi file JSON rapi
+          echo "{\"sai-roots\": \"$(cat link1.txt)\", \"rhenald-kasali\": \"$(cat link2.txt)\"}" > stream_links.json
       - name: Commit & Push
         run: |
           git config user.name "Bot"
           git config user.email "bot@github.com"
-          git add stream.txt
-          git commit -m "Update stream" || exit 0
+          git add stream_links.json
+          git commit -m "Update links" || exit 0
           git push
