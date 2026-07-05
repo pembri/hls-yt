@@ -9,12 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
-          sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
-          sudo chmod a+rx /usr/local/bin/yt-dlp
-      - run: |
-          # Perintah ini akan langsung menarik URL m3u8 yang valid
-          yt-dlp -g "https://www.youtube.com/watch?v=8dNAAe5dcqQ" > stream.txt
+      - name: Tarik Link API
+        run: |
+          # API ini lebih stabil daripada kavin.rocks
+          curl -s "https://api.piped.projectsegfau.lt/streams/8dNAAe5dcqQ" | jq -r '.hls' > stream.txt
       - name: Commit & Push
         run: |
           git config user.name "Bot"
