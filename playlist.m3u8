@@ -1,11 +1,9 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="Tvone" tvg-id="tvone",Tvone
-/stream-hls/tvone/master.m3u8
 #EXTINF:-1 tvg-name="Cnn Indonesia" tvg-id="cnn-indonesia",Cnn Indonesia
-/stream-hls/cnn-indonesia/master.m3u8
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cnn-indonesia/master.m3u8
 #EXTINF:-1 tvg-name="Idx" tvg-id="idx",Idx
-/stream-hls/idx/master.m3u8
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/idx/master.m3u8
 #EXTINF:-1 tvg-name="Sindonews" tvg-id="sindonews",Sindonews
-/stream-hls/sindonews/master.m3u8
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/sindonews/master.m3u8
 #EXTINF:-1 tvg-name="Metro Tv" tvg-id="metro-tv",Metro Tv
-/stream-hls/metro-tv/master.m3u8
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/metro-tv/master.m3u8
