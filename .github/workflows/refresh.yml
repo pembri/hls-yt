@@ -21,25 +21,12 @@ jobs:
         run: echo "${{ secrets.YT_COOKIES }}" > /tmp/cookies.txt
 
       - name: Extract HLS URLs
+        run: python3 extract.py
+
+      - name: Commit and push
         run: |
-          python3 << 'PYEOF'
-          import json, subprocess, os
-          with open('channels.json') as f:
-              channels = json.load(f)
-          os.makedirs('channel', exist_ok=True)
-          for slug, url in channels.items():
-              print(f"Processing {slug}...")
-              try:
-                  result = subprocess.run([
-                      'yt-dlp', '-g', '--no-warnings', '--quiet',
-                      '--cookies', '/tmp/cookies.txt',
-                      '--extractor-args', 'youtube:player_client=ios',
-                      url
-                  ], capture_output=True, text=True, timeout=60)
-                  hls_url = None
-                  for line in result.stdout.strip().split('\n'):
-                      if '.m3u8' in line:
-                          hls_url = line.strip()
-                          break
-                  if hls_url:
-                      with open(f'channel/{slug}.m3u8', 'w') as f:
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add channel/
+          git diff --staged --quiet || git commit -m "refresh $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
