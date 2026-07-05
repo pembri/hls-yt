@@ -9,9 +9,13 @@ https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/idx/master.m3u8
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/sindonews/master.m3u8
 #EXTINF:-1 tvg-name="Metro Tv" tvg-id="metro-tv",Metro Tv
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/metro-tv/master.m3u8
+#EXTINF:-1 tvg-name="Kompas Tv" tvg-id="kompas-tv",Kompas Tv
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/kompas-tv/master.m3u8
 #EXTINF:-1 tvg-name="Euro News" tvg-id="euro-news",Euro News
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/euro-news/master.m3u8
 #EXTINF:-1 tvg-name="Abc News" tvg-id="abc-news",Abc News
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/abc-news/master.m3u8
+#EXTINF:-1 tvg-name="Cna" tvg-id="cna",Cna
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cna/master.m3u8
 #EXTINF:-1 tvg-name="African News" tvg-id="african-news",African News
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/african-news/master.m3u8
