@@ -1,7 +1,7 @@
 name: Auto Update Stream
 on:
   schedule:
-    - cron: '*/30 * * * *' # Cek tiap 30 menit
+    - cron: '*/40 * * * *' # Cek tiap 30 menit
   workflow_dispatch:
 
 jobs:
