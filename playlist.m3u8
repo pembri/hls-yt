@@ -1,8 +1,12 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="Tvone" tvg-id="tvone",Tvone
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/tvone/master.m3u8
+#EXTINF:-1 tvg-name="Cnn Indonesia" tvg-id="cnn-indonesia",Cnn Indonesia
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cnn-indonesia/master.m3u8
 #EXTINF:-1 tvg-name="Idx" tvg-id="idx",Idx
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/idx/master.m3u8
+#EXTINF:-1 tvg-name="Sindonews" tvg-id="sindonews",Sindonews
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/sindonews/master.m3u8
 #EXTINF:-1 tvg-name="Metro Tv" tvg-id="metro-tv",Metro Tv
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/metro-tv/master.m3u8
 #EXTINF:-1 tvg-name="Kompas Tv" tvg-id="kompas-tv",Kompas Tv
@@ -11,6 +15,8 @@ https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/kompas-tv/master.m3u
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/euro-news/master.m3u8
 #EXTINF:-1 tvg-name="Abc News" tvg-id="abc-news",Abc News
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/abc-news/master.m3u8
+#EXTINF:-1 tvg-name="Cna" tvg-id="cna",Cna
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cna/master.m3u8
 #EXTINF:-1 tvg-name="Al Jazeera" tvg-id="al-jazeera",Al Jazeera
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/al-jazeera/master.m3u8
 #EXTINF:-1 tvg-name="African News" tvg-id="african-news",African News
