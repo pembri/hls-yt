@@ -27,8 +27,6 @@ https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cnn-internasional/ma
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/france24/master.m3u8
 #EXTINF:-1 tvg-name="France24 English" tvg-id="france24-english",France24 English
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/france24-english/master.m3u8
-#EXTINF:-1 tvg-name="Sky News" tvg-id="sky-news",Sky News
-https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/sky-news/master.m3u8
 #EXTINF:-1 tvg-name="Cnbc Internasional" tvg-id="cnbc-internasional",Cnbc Internasional
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cnbc-internasional/master.m3u8
 #EXTINF:-1 tvg-name="Trt World" tvg-id="trt-world",Trt World
