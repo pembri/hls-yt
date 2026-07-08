@@ -31,5 +31,7 @@ https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/france24-english/mas
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cnbc-internasional/master.m3u8
 #EXTINF:-1 tvg-name="Trt World" tvg-id="trt-world",Trt World
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/trt-world/master.m3u8
+#EXTINF:-1 tvg-name="Arirang" tvg-id="arirang",Arirang
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/arirang/master.m3u8
 #EXTINF:-1 tvg-name="Mr Bean" tvg-id="mr-bean",Mr Bean
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/mr-bean/master.m3u8
