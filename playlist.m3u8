@@ -17,8 +17,6 @@ https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/euro-news/master.m3u
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/abc-news/master.m3u8
 #EXTINF:-1 tvg-name="Cna" tvg-id="cna",Cna
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cna/master.m3u8
-#EXTINF:-1 tvg-name="Al Jazeera" tvg-id="al-jazeera",Al Jazeera
-https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/al-jazeera/master.m3u8
 #EXTINF:-1 tvg-name="African News" tvg-id="african-news",African News
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/african-news/master.m3u8
 #EXTINF:-1 tvg-name="Cnn Internasional" tvg-id="cnn-internasional",Cnn Internasional
