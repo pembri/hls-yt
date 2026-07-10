@@ -21,8 +21,6 @@ https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/al-jazeera/master.m3
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/african-news/master.m3u8
 #EXTINF:-1 tvg-name="Cnn Internasional" tvg-id="cnn-internasional",Cnn Internasional
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cnn-internasional/master.m3u8
-#EXTINF:-1 tvg-name="France24" tvg-id="france24",France24
-https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/france24/master.m3u8
 #EXTINF:-1 tvg-name="France24 English" tvg-id="france24-english",France24 English
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/france24-english/master.m3u8
 #EXTINF:-1 tvg-name="Cnbc Internasional" tvg-id="cnbc-internasional",Cnbc Internasional
