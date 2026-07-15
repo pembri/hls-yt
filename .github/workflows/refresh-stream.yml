@@ -4,78 +4,23 @@ on:
   push:
     branches: [main]
     paths:
-      - ".github/workflows/refresh-stream.yml"
-      - "scripts/refresh.py"
+      - "channels.json"
   schedule:
     - cron: "0 */2 * * *"   # tiap 2 jam
   workflow_dispatch: {}      # bisa trigger manual
-
-permissions:
-  contents: write
 
 concurrency:
   group: refresh-stream
   cancel-in-progress: false
 
-env:
-  WORKER_BASE: "https://cdn-server-yt.pembriahmad526.workers.dev"
-
 jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - name: Run refresh-stream.sh on VPS
+        uses: appleboy/ssh-action@v1.2.0
         with:
-          fetch-depth: 1
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install yt-dlp
-        run: |
-          pip install -U yt-dlp --break-system-packages
-          pip install -U bgutil-ytdlp-pot-provider --break-system-packages
-
-      - name: Install Deno (JS runtime for yt-dlp signature solving)
-        run: |
-          curl -fsSL https://deno.land/install.sh | sh
-          echo "$HOME/.deno/bin" >> "$GITHUB_PATH"
-
-      - name: Setup bgutil PO Token provider
-        run: |
-          git clone https://github.com/Brainicism/bgutil-ytdlp-pot-provider.git "$HOME/bgutil-ytdlp-pot-provider"
-          cd "$HOME/bgutil-ytdlp-pot-provider/server"
-          npm ci
-          npx tsc
-
-      - name: Restore cookies.txt from secret
-        env:
-          COOKIES_B64: ${{ secrets.COOKIES_B64 }}
-        run: |
-          if [ -n "$COOKIES_B64" ]; then
-            echo "$COOKIES_B64" | base64 -d > cookies.txt
-          fi
-
-      - name: Extract HLS URLs
-        env:
-          COOKIES_FILE: ${{ github.workspace }}/cookies.txt
-        run: python3 scripts/refresh.py
-
-      - name: Cleanup cookies file
-        if: always()
-        run: rm -f cookies.txt
-
-      - name: Commit & push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add channel/ playlist.m3u8
-          if git diff --staged --quiet; then
-            echo "ℹ️  No changes to commit"
-            exit 0
-          fi
-          git commit -m "refresh $(date '+%Y-%m-%d %H:%M') UTC"
-          git push
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          script: bash ~/refresh-stream.sh
