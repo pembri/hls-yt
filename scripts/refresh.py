@@ -29,7 +29,7 @@ for slug, url in channels.items():
         cmd = ["yt-dlp", "-j", "--no-warnings", "--quiet"]
         if COOKIES_FILE and os.path.isfile(COOKIES_FILE):
             cmd += ["--cookies", COOKIES_FILE]
-        cmd += ["--extractor-args", "youtube:player_client=web"]
+        cmd += ["--extractor-args", "youtube:player_client=tv,web"]
         cmd += [url]
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
 
