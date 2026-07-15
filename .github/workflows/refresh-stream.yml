@@ -33,8 +33,12 @@ jobs:
         run: pip install -U yt-dlp --break-system-packages
 
       - name: Restore cookies.txt from secret
-        if: ${{ secrets.COOKIES_B64 != '' }}
-        run: echo "${{ secrets.COOKIES_B64 }}" | base64 -d > cookies.txt
+        env:
+          COOKIES_B64: ${{ secrets.COOKIES_B64 }}
+        run: |
+          if [ -n "$COOKIES_B64" ]; then
+            echo "$COOKIES_B64" | base64 -d > cookies.txt
+          fi
 
       - name: Extract HLS URLs
         env:
