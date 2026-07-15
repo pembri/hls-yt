@@ -32,6 +32,11 @@ jobs:
       - name: Install yt-dlp
         run: pip install -U yt-dlp --break-system-packages
 
+      - name: Install Deno (JS runtime for yt-dlp signature solving)
+        run: |
+          curl -fsSL https://deno.land/install.sh | sh
+          echo "$HOME/.deno/bin" >> "$GITHUB_PATH"
+
       - name: Restore cookies.txt from secret
         env:
           COOKIES_B64: ${{ secrets.COOKIES_B64 }}
