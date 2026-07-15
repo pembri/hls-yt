@@ -1,6 +1,11 @@
 name: Refresh HLS Stream
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/refresh-stream.yml"
+      - "scripts/refresh.py"
   schedule:
     - cron: "0 */2 * * *"   # tiap 2 jam
   workflow_dispatch: {}      # bisa trigger manual
@@ -30,12 +35,21 @@ jobs:
           python-version: "3.12"
 
       - name: Install yt-dlp
-        run: pip install -U yt-dlp --break-system-packages
+        run: |
+          pip install -U yt-dlp --break-system-packages
+          pip install -U bgutil-ytdlp-pot-provider --break-system-packages
 
       - name: Install Deno (JS runtime for yt-dlp signature solving)
         run: |
           curl -fsSL https://deno.land/install.sh | sh
           echo "$HOME/.deno/bin" >> "$GITHUB_PATH"
+
+      - name: Setup bgutil PO Token provider
+        run: |
+          git clone https://github.com/Brainicism/bgutil-ytdlp-pot-provider.git "$HOME/bgutil-ytdlp-pot-provider"
+          cd "$HOME/bgutil-ytdlp-pot-provider/server"
+          npm ci
+          npx tsc
 
       - name: Restore cookies.txt from secret
         env:
