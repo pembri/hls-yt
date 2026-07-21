@@ -1,8 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="Tvone" tvg-id="tvone",Tvone
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/tvone/master.m3u8
-#EXTINF:-1 tvg-name="Garuda Tv" tvg-id="garuda-tv",Garuda Tv
-https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/garuda-tv/master.m3u8
+#EXTINF:-1 tvg-name="Musica" tvg-id="musica",Musica
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/musica/master.m3u8
 #EXTINF:-1 tvg-name="Cnn Indonesia" tvg-id="cnn-indonesia",Cnn Indonesia
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cnn-indonesia/master.m3u8
 #EXTINF:-1 tvg-name="Idx" tvg-id="idx",Idx
