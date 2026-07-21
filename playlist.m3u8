@@ -43,3 +43,7 @@ https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/arirang/master.m3u8
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/wwe/master.m3u8
 #EXTINF:-1 tvg-name="Cgtn" tvg-id="cgtn",Cgtn
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cgtn/master.m3u8
+#EXTINF:-1 tvg-name="Dw English" tvg-id="dw-english",Dw English
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/dw-english/master.m3u8
+#EXTINF:-1 tvg-name="Bloomberg Tv" tvg-id="bloomberg-tv",Bloomberg Tv
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/bloomberg-tv/master.m3u8
