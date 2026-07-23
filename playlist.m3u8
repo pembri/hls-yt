@@ -47,3 +47,5 @@ https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cgtn/master.m3u8
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/dw-english/master.m3u8
 #EXTINF:-1 tvg-name="Bloomberg Tv" tvg-id="bloomberg-tv",Bloomberg Tv
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/bloomberg-tv/master.m3u8
+#EXTINF:-1 tvg-name="Cartoon Network" tvg-id="cartoon-network",Cartoon Network
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cartoon-network/master.m3u8
