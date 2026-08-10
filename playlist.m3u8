@@ -35,8 +35,6 @@ https://cdn-server-yt.vidiraplay.biz.id/stream-hls/cnbc-internasional/master.m3u
 https://cdn-server-yt.vidiraplay.biz.id/stream-hls/trt-world/master.m3u8
 #EXTINF:-1 tvg-name="Arirang" tvg-id="arirang",Arirang
 https://cdn-server-yt.vidiraplay.biz.id/stream-hls/arirang/master.m3u8
-#EXTINF:-1 tvg-name="Cgtn" tvg-id="cgtn",Cgtn
-https://cdn-server-yt.vidiraplay.biz.id/stream-hls/cgtn/master.m3u8
 #EXTINF:-1 tvg-name="Dw English" tvg-id="dw-english",Dw English
 https://cdn-server-yt.vidiraplay.biz.id/stream-hls/dw-english/master.m3u8
 #EXTINF:-1 tvg-name="Bloomberg Tv" tvg-id="bloomberg-tv",Bloomberg Tv
