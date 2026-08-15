@@ -37,8 +37,6 @@ https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cnbc-internasional/m
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/trt-world/master.m3u8
 #EXTINF:-1 tvg-name="Arirang" tvg-id="arirang",Arirang
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/arirang/master.m3u8
-#EXTINF:-1 tvg-name="Wwe" tvg-id="wwe",Wwe
-https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/wwe/master.m3u8
 #EXTINF:-1 tvg-name="Dw English" tvg-id="dw-english",Dw English
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/dw-english/master.m3u8
 #EXTINF:-1 tvg-name="Bloomberg Tv" tvg-id="bloomberg-tv",Bloomberg Tv
