@@ -1,10 +1,16 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="Tvone" tvg-id="tvone",Tvone
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/tvone/master.m3u8
+#EXTINF:-1 tvg-name="Musica" tvg-id="musica",Musica
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/musica/master.m3u8
 #EXTINF:-1 tvg-name="Cnn Indonesia" tvg-id="cnn-indonesia",Cnn Indonesia
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cnn-indonesia/master.m3u8
 #EXTINF:-1 tvg-name="Idx" tvg-id="idx",Idx
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/idx/master.m3u8
+#EXTINF:-1 tvg-name="Sindonews" tvg-id="sindonews",Sindonews
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/sindonews/master.m3u8
+#EXTINF:-1 tvg-name="Metro Tv" tvg-id="metro-tv",Metro Tv
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/metro-tv/master.m3u8
 #EXTINF:-1 tvg-name="Kompas Tv" tvg-id="kompas-tv",Kompas Tv
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/kompas-tv/master.m3u8
 #EXTINF:-1 tvg-name="Euro News" tvg-id="euro-news",Euro News
@@ -31,6 +37,8 @@ https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/cnbc-internasional/m
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/trt-world/master.m3u8
 #EXTINF:-1 tvg-name="Arirang" tvg-id="arirang",Arirang
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/arirang/master.m3u8
+#EXTINF:-1 tvg-name="Wwe" tvg-id="wwe",Wwe
+https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/wwe/master.m3u8
 #EXTINF:-1 tvg-name="Dw English" tvg-id="dw-english",Dw English
 https://cdn-server-yt.pembriahmad526.workers.dev/stream-hls/dw-english/master.m3u8
 #EXTINF:-1 tvg-name="Bloomberg Tv" tvg-id="bloomberg-tv",Bloomberg Tv
