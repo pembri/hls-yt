@@ -33,8 +33,6 @@ cdn-server-yt.vidiraplay.biz.id/stream-hls/france24-english/master.m3u8
 cdn-server-yt.vidiraplay.biz.id/stream-hls/sky-news/master.m3u8
 #EXTINF:-1 tvg-name="Cnbc Internasional" tvg-id="cnbc-internasional",Cnbc Internasional
 cdn-server-yt.vidiraplay.biz.id/stream-hls/cnbc-internasional/master.m3u8
-#EXTINF:-1 tvg-name="Trt World" tvg-id="trt-world",Trt World
-cdn-server-yt.vidiraplay.biz.id/stream-hls/trt-world/master.m3u8
 #EXTINF:-1 tvg-name="Arirang" tvg-id="arirang",Arirang
 cdn-server-yt.vidiraplay.biz.id/stream-hls/arirang/master.m3u8
 #EXTINF:-1 tvg-name="Dw English" tvg-id="dw-english",Dw English
