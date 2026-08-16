@@ -39,5 +39,5 @@ cdn-server-yt.vidiraplay.biz.id/stream-hls/arirang/master.m3u8
 cdn-server-yt.vidiraplay.biz.id/stream-hls/dw-english/master.m3u8
 #EXTINF:-1 tvg-name="Bloomberg Tv" tvg-id="bloomberg-tv",Bloomberg Tv
 cdn-server-yt.vidiraplay.biz.id/stream-hls/bloomberg-tv/master.m3u8
-#EXTINF:-1 tvg-name="Cartoon Network" tvg-id="cartoon-network",Cartoon Network
-cdn-server-yt.vidiraplay.biz.id/stream-hls/cartoon-network/master.m3u8
+#EXTINF:-1 tvg-name="Cctv4" tvg-id="cctv4",Cctv4
+cdn-server-yt.vidiraplay.biz.id/stream-hls/cctv4/master.m3u8
